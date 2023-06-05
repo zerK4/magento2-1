@@ -1,0 +1,3 @@
+input ProductAttributeFilterInput @doc(description: "Defines the filters to be used in the search. A filter contains at least one attribute, a comparison operator, and the value that is being searched for.") {
+    category_name: FilterEqualTypeInput @doc(description: "Filter product by category name.")
+}

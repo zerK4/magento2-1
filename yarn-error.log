@@ -1,0 +1,57 @@
+Arguments: 
+  /usr/local/bin/node /opt/homebrew/Cellar/yarn/1.22.19/libexec/bin/yarn.js install
+
+PATH: 
+  /Users/zerka/.npm/_npx/07a868ff3321e389/node_modules/.bin:/Users/zerka/Desktop/projects/ugs/node_modules/.bin:/Users/zerka/Desktop/projects/node_modules/.bin:/Users/zerka/Desktop/node_modules/.bin:/Users/zerka/node_modules/.bin:/Users/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/bin/python3:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/usr/local/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.20.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: [object%20Object]/@scandipwa%2fmagento-scripts: Invalid URI "[object%20Object]/@scandipwa%2fmagento-scripts"
+      at Request.module.exports.Request.init (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:140978:31)
+      at new Request (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:140832:8)
+      at request (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:137738:10)
+      at RequestManager.execute (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:66197:15)
+      at RequestManager.shiftQueue (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:66235:10)
+      at /opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:65905:13
+      at new Promise (<anonymous>)
+      at new F (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:5305:28)
+      at RequestManager.request (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:65903:19)
+      at NpmRegistry.<anonymous> (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:31751:42)
+
+npm manifest: 
+  {
+      "name": "headless1",
+      "private": true,
+      "license": "proprietary",
+      "version": "0.0.0",
+      "scripts": {
+          "start": "magento-scripts start",
+          "stop": "magento-scripts stop",
+          "cli": "magento-scripts cli",
+          "logs": "magento-scripts logs",
+          "link": "magento-scripts link",
+          "status": "magento-scripts status",
+          "exec": "magento-scripts exec",
+          "import-db": "magento-scripts import-db"
+      },
+      "scandipwa": {
+          "type": "magento"
+      },
+      "dependencies": {
+          "@scandipwa/magento-scripts": "2.1.2"
+      }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
